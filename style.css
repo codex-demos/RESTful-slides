@@ -23,12 +23,12 @@ img {
 .slide {
   position: absolute;
   top: 0;
-  left: 100%; /* Initially position slides out of view */
+  left: 100%;
   width: 100%;
   height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-  background: #f0f0f0; /* Ensure background is set */
+  background: #f0f0f0;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -39,7 +39,7 @@ pre {
   padding: 15px;
   margin: 20px 0;
   overflow: auto;
-  white-space: pre-wrap; /* Since pre is used to preserve spaces and line breaks */
+  white-space: pre-wrap;
   word-wrap: break-word;
 }
 #slide10 > ul {
