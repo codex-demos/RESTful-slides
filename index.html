@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Presentation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="slideshow">
+      <!-- Slide 1: Introduction to APIs -->
+      <div class="slide" id="slide1">
+        <h2>Introduction to APIs</h2>
+        <h3>What is an API?</h3>
+        <p>
+          An API (Application Programming Interface) is a set of rules and
+          protocols for building and interacting with software applications. It
+          allows different software systems to communicate with each other.
+        </p>
+        <div class="img-container">
+          <img src="API.png" alt="Flow of data between client and server" />
+        </div>
+      </div>
+
+      <!-- Slide 2: Common Examples of APIs -->
+      <div class="slide" id="slide2">
+        <h3>Common Examples of APIs</h3>
+        <ul>
+          <li>
+            <strong>Web APIs</strong>: Interfaces for interacting with web
+            services. For example, the Twitter API allows applications to access
+            public tweets and post new ones.
+          </li>
+          <li>
+            <strong>Operating System APIs</strong>: Allow applications to
+            perform functions like creating files, sending output to the
+            display, etc.
+          </li>
+          <li>
+            <strong>Database APIs</strong>: Enable communication between an
+            application and a database management system.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Slide 3: Importance of APIs -->
+      <div class="slide" id="slide3">
+        <h3>Importance of APIs</h3>
+        <ul>
+          <li>
+            <strong>Integration</strong>: APIs allow different software systems
+            to work together, facilitating integration.
+          </li>
+          <li>
+            <strong>Automation</strong>: They enable automation of tasks by
+            allowing software systems to interact programmatically.
+          </li>
+          <li>
+            <strong>Extension and Scalability</strong>: APIs provide a way for
+            extending the functionality of existing products and services.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Slide 4: Understanding RESTful APIs and HTTP Methods -->
+      <div class="slide" id="slide4">
+        <h2>Understanding RESTful APIs and HTTP Methods</h2>
+        <div class="img-container">
+          <img src="REST.png" alt="Flow of data between client and server" />
+        </div>
+      </div>
+
+      <!-- Slide 5: What are RESTful APIs? -->
+      <div class="slide" id="slide5">
+        <h3>What are RESTful APIs?</h3>
+        <p>
+          <strong>REST (Representational State Transfer)</strong>: An
+          architectural style for designing networked applications. RESTful APIs
+          use HTTP requests to access and use data.
+        </p>
+        <p>
+          <strong>Stateless</strong>: Each HTTP request from a client to server
+          must contain all the information needed to understand and complete the
+          request.
+        </p>
+      </div>
+
+      <!-- Slide 6: HTTP Methods -->
+      <div class="slide" id="slide6">
+        <h3>HTTP Methods</h3>
+        <ol>
+          <li>
+            <strong>GET</strong>: Used to retrieve data from a server at the
+            specified resource. For example, requesting a user's data from an
+            API.
+          </li>
+          <li>
+            <strong>POST</strong>: Used to send data to a server to
+            create/update a resource. For example, posting a tweet via the
+            Twitter API.
+          </li>
+          <li>
+            <strong>PUT</strong>: Used to update an existing resource on the
+            server. Typically, it provides a complete update.
+          </li>
+          <li>
+            <strong>DELETE</strong>: Removes the specified resource from the
+            server.
+          </li>
+        </ol>
+      </div>
+
+      <!-- Slide 7: What is JSON? -->
+      <div class="slide" id="slide7">
+        <h3>What is JSON?</h3>
+        <p>
+          JSON (JavaScript Object Notation) is a lightweight data-interchange
+          format. It is easy for humans to read and write, and easy for machines
+          to parse and generate. JSON is built on two structures:
+        </p>
+        <ul>
+          <li>
+            A collection of name/value pairs (often called an object in
+            programming languages).
+          </li>
+          <li>An ordered list of values (often called an array).</li>
+        </ul>
+      </div>
+      <!-- Slide 8: Example of JSON -->
+      <div class="slide" id="slide8">
+        <h3>Example of JSON</h3>
+        <p>Here's a simple example of JSON data representing a person:</p>
+        <pre id="jsonExample">
+    {
+        "name": "John Doe",
+        "age": 30,
+        "isEmployed": true,
+        "address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "zipcode": "12345"
+        },
+        "phoneNumbers": ["123-456-7890", "456-789-0123"]
+    }
+    </pre
+        >
+      </div>
+      <!-- Slide 9: Why We Use JSON -->
+      <div class="slide" id="slide9">
+        <h3>Why We Use JSON</h3>
+        <p>JSON is widely used in web applications for:</p>
+        <ul>
+          <li>
+            <strong>Data Interchange</strong>: It is a standard format for
+            sending and receiving data through APIs.
+          </li>
+          <li>
+            <strong>Configurations</strong>: Many applications use JSON for
+            configuration files.
+          </li>
+          <li>
+            <strong>Storage</strong>: JSON is used in databases like MongoDB to
+            store structured data.
+          </li>
+        </ul>
+      </div>
+      <!-- Slide 10: HTTP Status Codes Overview -->
+      <div class="slide" id="slide10">
+        <h3>HTTP Status Codes Overview</h3>
+        <p>
+          HTTP status codes are standardized codes returned by the server to
+          indicate the status of a client's request. They are grouped into five
+          classes:
+        </p>
+        <ul>
+          <li>
+            <strong>1xx (Informational)</strong>: These codes indicate a
+            provisional response, primarily to acknowledge that the request was
+            received.
+          </li>
+          <li>
+            <strong>2xx (Success)</strong>: These codes indicate that the
+            client's request was successfully received, understood, and
+            accepted.
+          </li>
+          <li>
+            <strong>3xx (Redirection)</strong>: These codes indicate that
+            further action needs to be taken by the client to complete the
+            request.
+          </li>
+          <li>
+            <strong>4xx (Client Error)</strong>: These codes indicate an error
+            that the client made (e.g., a bad request or unauthorized access).
+          </li>
+          <li>
+            <strong>5xx (Server Error)</strong>: These codes indicate an error
+            on the server's side (e.g., the server failed to fulfill a valid
+            request).
+          </li>
+        </ul>
+      </div>
+      <!-- Slide 11: Common HTTP Status Codes -->
+      <div class="slide" id="slide11">
+        <h3>Common HTTP Status Codes</h3>
+        <ul>
+          <li>
+            <strong>200 OK</strong>: The request has succeeded. The meaning of
+            the success depends on the HTTP method used.
+          </li>
+          <li>
+            <strong>301 Moved Permanently</strong>: This response code means
+            that the URI of the requested resource has been changed permanently.
+          </li>
+          <li>
+            <strong>404 Not Found</strong>: The server can't find the requested
+            resource. This code is often used when the server does not wish to
+            reveal exactly why the request has been refused.
+          </li>
+          <li>
+            <strong>500 Internal Server Error</strong>: A generic error message,
+            given when no more specific message is suitable.
+          </li>
+        </ul>
+      </div>
+
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
