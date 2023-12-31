@@ -42,7 +42,15 @@ pre {
   white-space: pre-wrap; /* Since pre is used to preserve spaces and line breaks */
   word-wrap: break-word;
 }
-
+#slide10 > ul {
+  font-size: 25px;
+}
+#slide11 {
+  font-size: 40px;
+}
+#slide16 {
+  font-size: 30px;
+}
 button {
   padding: 10px;
   margin: 10px;

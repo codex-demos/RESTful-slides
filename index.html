@@ -172,7 +172,7 @@
           indicate the status of a client's request. They are grouped into five
           classes:
         </p>
-        <ul>
+        <ul class="http">
           <li>
             <strong>1xx (Informational)</strong>: These codes indicate a
             provisional response, primarily to acknowledge that the request was
@@ -221,6 +221,109 @@
             given when no more specific message is suitable.
           </li>
         </ul>
+      </div>
+      <!-- Slide 12: Introduction to Using Postman -->
+      <div class="slide" id="slide12">
+        <h3>Introduction to Using Postman</h3>
+        <p>
+          Postman is a powerful tool used for API testing. It allows you to send
+          requests to a server and view the responses, helping you understand
+          how APIs work in practice. With Postman, you can:
+        </p>
+        <ul>
+          <li>
+            Send different types of HTTP requests (GET, POST, PUT, DELETE).
+          </li>
+          <li>
+            Examine the details of responses, including status codes and body
+            content.
+          </li>
+          <li>
+            Experiment with different request parameters and body content.
+          </li>
+        </ul>
+      </div>
+      <!-- Slide 13: Making a GET Request with Postman -->
+      <div class="slide" id="slide13">
+        <h3>Making a GET Request with Postman</h3>
+        <ol>
+          <li>Open Postman and create a new request.</li>
+          <li>Select the 'GET' method from the dropdown menu.</li>
+          <li>
+            Enter a URL for an API endpoint. For example, use a public API to
+            retrieve data.
+          </li>
+          <li>Click 'Send' to make the request.</li>
+          <li>
+            Observe the response that is returned, including the status code and
+            JSON data.
+          </li>
+        </ol>
+      </div>
+      <!-- Slide 14: Testing a POST Request with Postman -->
+      <div class="slide" id="slide14">
+        <h3>Testing a POST Request with Postman</h3>
+        <ol>
+          <li>Create a new request in Postman and select the 'POST' method.</li>
+          <li>Enter the URL for a POST API endpoint.</li>
+          <li>
+            Under 'Body', select 'raw' and choose 'JSON' from the dropdown menu.
+          </li>
+          <li>
+            Enter your JSON data in the request body. For example: {"name":
+            "John Doe", "email": "john@example.com"}
+          </li>
+          <li>
+            Click 'Send' and observe the response, including any changes in the
+            server data.
+          </li>
+        </ol>
+      </div>
+
+      <!-- Slide 15: Understanding Responses in Postman -->
+      <div class="slide" id="slide15">
+        <h3>Understanding Responses in Postman</h3>
+        <p>When you send a request in Postman, pay attention to:</p>
+        <ul>
+          <li>
+            The status code: Tells you whether the request was successful (2xx),
+            resulted in a client error (4xx), or server error (5xx).
+          </li>
+          <li>
+            The response body: Contains the data sent back by the server. In
+            case of JSON data, it's formatted for easy reading.
+          </li>
+          <li>
+            Response headers: Provide metadata about the response, such as
+            content type and server information.
+          </li>
+        </ul>
+      </div>
+      <!-- Slide 16: Conclusion and Next Steps -->
+      <div class="slide" id="slide16">
+        <h2>Conclusion and Next Steps</h2>
+        <p>
+          We've covered the basics of how APIs function, the role of JSON in
+          data interchange, and the significance of HTTP status codes.
+        </p>
+        <h3>Upcoming Assignment</h3>
+        <p>Next, we'll dive into hands-on practice:</p>
+        <ul>
+          <li>Install Postman, a powerful tool for API testing.</li>
+          <li>
+            Send your first API requests to understand how APIs respond in
+            real-time.
+          </li>
+          <li>
+            Explore different types of requests (GET, POST) and analyze the
+            responses.
+          </li>
+        </ul>
+        <p>
+          This practical exercise will help reinforce your understanding and
+          give you a real-world experience of working with APIs.
+        </p>
+        <p><strong>Stay tuned for more!</strong></p>
       </div>
 
       <button id="prevBtn">Previous</button>
